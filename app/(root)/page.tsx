@@ -3,8 +3,8 @@ import {Button} from "@/components/ui/button";
 
 const Page = () => {
     return (
-        <div className="flex justify-center items-center h-screen">
-            <Button>Click me</Button>
+        <div className="flex min-h-screen home-wrapper">
+            Home
         </div>
     )
 }
