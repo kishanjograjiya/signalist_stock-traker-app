@@ -29,9 +29,9 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
               <p className="max-md:text-xs text-gray-500">Retail Investor</p>
             </div>
             <div className="flex items-center gap-0.5">
-              {[1, 2, 3, 4, 5].map((star) => (
+              {Array.from({ length: 5 }, (_, i) => (
                 <Image
-                  key={star}
+                  key={i}
                   src="/assets/icons/star.svg"
                   alt="Star"
                   width={20}
