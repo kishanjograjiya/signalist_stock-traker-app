@@ -63,6 +63,7 @@ const SignUp = () => {
           name="email"
           label="Email"
           placeholder="john.doe@example.com"
+          type="email"
           register={register}
           error={errors.email}
           validation={{

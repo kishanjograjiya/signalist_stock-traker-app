@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import { Controller } from "react-hook-form";
 import {
   Popover,
@@ -33,7 +33,7 @@ const CountrySelect = ({
   const [open, setOpen] = useState(false);
 
   // Get country options with flags
-  const countries = countryList().getData();
+  const countries = useMemo(() => countryList().getData(), []);
 
   // Helper function to get flag emoji
   const getFlagEmoji = (countryCode: string) => {
