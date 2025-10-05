@@ -15,7 +15,7 @@ const InputField = ({
 }: FormInputProps) => {
   return (
     <div className="space-y-2">
-      <Label htmlFor={label} className="form-label">
+      <Label htmlFor={name} className="form-label">
         {label}
       </Label>
       <Input
