@@ -17,6 +17,7 @@ import { toast } from "sonner";
 
 const SignUp = () => {
   const router = useRouter();
+
   const {
     register,
     handleSubmit,
