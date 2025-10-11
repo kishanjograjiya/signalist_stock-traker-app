@@ -45,7 +45,8 @@ export default function SearchCommand({
     try {
       const results = await searchStocks(searchTerm.trim());
       setStocks(results);
-    } catch {
+    } catch (error) {
+      console.error("Error searching stocks:", error);
       setStocks([]);
     } finally {
       setLoading(false);
