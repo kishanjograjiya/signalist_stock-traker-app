@@ -22,6 +22,14 @@ export const metadata: Metadata = {
   },
 };
 
+/**
+ * Provides the application's root HTML layout and global styling.
+ *
+ * Renders an HTML document with language set to English and a dark theme, applies the Geist Sans and Geist Mono fonts plus antialiased styling to the body, and includes a global Toaster for notifications.
+ *
+ * @param children - The page or application content to be rendered inside the document body.
+ * @returns The root HTML structure containing the body with applied font variables, the provided children, and the Toaster component.
+ */
 export default function RootLayout({
   children,
 }: Readonly<{
