@@ -17,6 +17,9 @@ export const metadata: Metadata = {
   title: "Signalist",
   description:
     "Track real-time stock prices, get personalized alerts and explore detailed company insights.",
+  verification: {
+    google: 'AEIYvh8rB3sPbsLFvPPLcowY0wBxWRwwYI07tc4vDFM',
+  },
 };
 
 export default function RootLayout({
